@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+  
+@media screen and (min-width: 576px) {
+    .jumbotron {
+      padding: 8rem 2rem;
+    }
+  }
