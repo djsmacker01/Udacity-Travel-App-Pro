@@ -7,38 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Udacity Travel App</title>
-  <link rel="stylesheet" href="main.scss">
+  
 </head>
 
 <body>
   <header>
     <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar">
       <a class="navbar-brand" href="#">
         <img src="" width="30" height="40" class="d-inline-block align-top" alt="">
-       Udacity Travel App
+       <h2>Udacity Travel App</h2> 
       </a>
     </nav>
   </header>
   <main>
-    <div class="container-fluid p-0">
+    <div class="container-fluid">
       <section class="main">
         <div class="caption jumbotron jumbotron-fluid">
           <div class="container search">
             <h1 class="display-1 text-center">Travel</h1>
             <div class="row">
-             <input type="text" id="city" placeholder="City" aria-label="City" class="form-control col-md-3 mt-1">
-              <input type="date" id="date_start" aria-label="Date" class="form-control col-sm-6 col-md-3 mt-1">
-              <input type="date" id="date_end" aria-label="Date" class="form-control col-sm-6 col-md-3 mt-1">
+             <input type="text" id="city" placeholder="City" aria-label="City" class="form-control">
+              <input type="date" id="date_start" aria-label="Date" class="form-control">
+              <input type="date" id="date_end" aria-label="Date" class="form-control">
              
-                <button class="btn btn-secondary col-md-2 mt-1" type="button" id="button_search">Search</button>
+                <button class="search" type="button" id="button_search">Search</button>
               <!-- </div> -->
             </div>
           </div>
         </div>
         <div class="modal fade" id="tripModal" tabindex="-1" role="dialog" aria-labelledby="tripModalTitle"
           aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-dialog " role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h3 class="modal-title trip_title" id="tripModalTitle"></h3>
@@ -49,20 +49,20 @@
               <div class="modal-body">
                 <div class="container-fluid">
                   <div class="media row">
-                    <img src="" class="images mr-3 col-12 col-lg-5" alt="Popular Images from Trip Location">
-                    <div class="media-body col-12 col-lg-7">
-                      <h4 class="mt-0">Trip Location: <span class="media_heading"></span></h4>
-                      <h6 class="mt-0">Departure: <span class="media_heading"></span></h6>
-                      <h6 class="mt-0">Arrival: <span class="media_heading"></span></h6>
-                      <h6 class="mt-0">Duration: <span class="media_heading"></span></h6>
+                    <img src="" class="image" alt="">
+                    <div class="media">
+                      <h4 class="trip">Trip Location: <span class="media_heading"></span></h4>
+                      <h6 class="departure">Departure: <span class="media_heading"></span></h6>
+                      <h6 class='arrival'>Arrival: <span class="media_heading"></span></h6>
+                      <h6 class="duration">Duration: <span class="media_heading"></span></h6>
                       <span class="trip_countdown"></span>
                       <span class="trip_weather"></span>
                     </div>
                   </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary trip_cancel">Close</button>
-                  <button type="button" class="btn btn-primary trip_save">Save</button>
+                <div class="footer">
+                  <button type="button" class="trip_cancel">Close</button>
+                  <button type="button" class="trip_save">Save</button>
                 </div>
               </div>
             </div>
@@ -74,12 +74,12 @@
   </main>
   <script>
     // Check that service workers are supported
-    if ('serviceWorker' in navigator) {
-      // Use the window load event to keep the page load performant
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js');
-      });
-    }
+    // if ('serviceWorker' in navigator) {
+    //   // Use the window load event to keep the page load performant
+    //   window.addEventListener('load', () => {
+    //     navigator.serviceWorker.register('/service-worker.js');
+    //   });
+    // }
   </script>
 </body>
 </html>

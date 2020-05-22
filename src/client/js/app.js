@@ -1,7 +1,7 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/main.scss';
 import '../styles/media.scss'
-import 'bootstrap';
+// import 'bootstrap';
 const $ = require("jquery");
 import { getCity, getTripStart, getTripEnd } from './region'
 import { getGeoLocation, getWeatherForecast, getImageURL, getCountryInfo } from './request';

@@ -1,37 +1,45 @@
 body {
-    height: 100%;
-  }
-  
-  .main {
-    height: 100vh;
-    background: url('../views/img/city.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .caption {
-    background-color: transparent;
-    width: 100%;
-  }
-  
-  .jumbotron {
-      padding: 4rem 2rem;
-    }
-  
-  .trips {
-    background-color: #f1f1f1;
-    width: 90%;
-    max-width: 868px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  .flag {
-    width: 75px;
-    height: auto;
+  height: 100%
+}
+
+.main {
+  height: 100vh;
+  background: url('../views/img/city.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  background-color: transparent;
+  width: 100%;
+}
+
+.jumbotron {
+    padding: 4rem 2rem;
   }
 
-  
-  
-  
+.trips {
+  background-color: #f1f1f1;
+  width: 90%;
+  max-width: 868px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flag {
+  width: 75px;
+  height: auto;
+}
+.footer{
+  background-color: #f1f1f1;
+
+}
+.navbar{
+  color: grey ;
+}
+h2{
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

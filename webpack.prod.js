@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/client/index.js',
@@ -34,12 +34,12 @@ module.exports = {
                   'file-loader',
                 ],
               },
-              {
-                test: /\.(html)$/,
-                use: [{
-                  loader: 'html-loader'
-                }]
-              }
+            //   {
+            //     test: /\.(html)$/,
+            //     use: [{
+            //       loader: 'html-loader'
+            //     }]
+            //   }
         ]
     },
     
@@ -49,15 +49,15 @@ module.exports = {
             filename: "./index.html",
         }),
         new MiniCssExtractPlugin({filename: '[name].css'}),
-        new CleanWebpackPlugin({
+        // new CleanWebpackPlugin({
             
-            dry: true,
-            // Write Logs to Console
-            verbose: true,
-            // Automatically remove all the unused webpack
-            cleanStaleWebpackAssets: false,
-            protectWebpackAssets: false
-          }),
+        //     dry: true,
+        //     // Write Logs to Console
+        //     verbose: true,
+        //     // Automatically remove all the unused webpack
+        //     cleanStaleWebpackAssets: false,
+        //     protectWebpackAssets: false
+        //   }),
         new WorkboxPlugin.GenerateSW()
         
     ]

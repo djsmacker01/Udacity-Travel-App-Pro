@@ -1,21 +1,6 @@
-// import './styles/resets.scss'
-import {
-    checkForName
-} from './js/nameChecker'
-import {
-    handleSubmit
-} from './js/formHandler'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap';
 
-import './styles/resets.scss'
-import './styles/header.scss'
-import './styles/form.scss'
-import './styles/footer.scss'
-import './styles/base.scss'
-
-
-
-export {
-    checkForName,
-    handleSubmit
-}
-
+import './styles/main.scss'
+import './styles/media.scss'
+import './views/img/city.jpg'
